@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: django-todo-deployment
-  namespace: default
+  namespace: app-deployment
 spec:
   replicas: 2
   selector:
