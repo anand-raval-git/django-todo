@@ -4,11 +4,11 @@ metadata:
   name: django-app-service
   namespace: app-deployment
 spec:
-  type: Nodeport
+  type: NodePort
   selector:
     app: django-todo
   ports:
     - port: 80
-      target port: 8000
-      node port: 3009
+      targetPort: 8000
+      nodePort: 30009
 
