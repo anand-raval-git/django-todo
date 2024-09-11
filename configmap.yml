@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: django-config
+  namespace: app-deployment
+data:
+  name: django-app
+  application: todo-app
+  protocol: TCP
