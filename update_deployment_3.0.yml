@@ -31,9 +31,9 @@ spec:
               key: secret-key
         volumeMounts:
         - name: todo-data
-          mountPath: /app
+          mountPath: /pvc-app
       volumes:
       - name: todo-data
         persistentVolumeClaim:
-          claimName: pvc-app
+          claimName: pvc
 
